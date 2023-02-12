@@ -14,8 +14,29 @@ body {
   color: var(--text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* header */
@@ -24,6 +45,7 @@ ul {
   font-family: "raleway", sans-serif;
   text-decoration: none;
   color: var(--primary-text-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .logo-text {
@@ -72,25 +94,39 @@ ul {
 .link-address:focus {
   color: var(--accent-color);
 }
+.page-header {
+  margin-bottom: 188px;
+}
 /* hero */
 
 .section-hero {
+  text-align: center;
+  left: 0px;
+  top: 72px;
   background-color: var(--primary-text-color);
+  margin-bottom: 120px;
+  outline: 2px solid tomato;
+  padding-bottom: 188px;
 }
 
 .title-hero {
+  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  padding-top: 188px;
+  margin-bottom: 48px;
 }
 
 /* buttons */
 .primary-button {
-  height: 56px;
   width: 169px;
+  height: 56px;
+  left: 623px;
+  top: 424px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -98,7 +134,7 @@ ul {
   background: var(--iris-color);
   color: var(--white-color);
   border-radius: 4px;
-  border: 0px solid;
+  border: 1px solid transparent;
   cursor: pointer;
 }
 
@@ -111,7 +147,6 @@ ul {
 .secondary-button {
   align-items: center;
   padding: 12px 24px;
-
   height: 48px;
   font-family: inherit;
   font-weight: 500;
@@ -157,9 +192,14 @@ ul {
   background-color: var(--background-white-color);
 }
 
+.list-item {
+  margin-bottom: 120px;
+}
+
 /* fooder */
 
 .footer-site {
+  top: 2280px;
   background-color: var(--primary-text-color);
 }
 
