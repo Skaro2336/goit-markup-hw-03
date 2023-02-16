@@ -203,7 +203,7 @@ img {
   margin-bottom: 8px;
 }
 
-.portfolio-img:nth-child(n + 3) {
+.portfolio-img:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
@@ -318,7 +318,6 @@ img {
 .section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
-  width: 1158px;
 }
 
 .list-button {
@@ -358,12 +357,9 @@ img {
   flex-wrap: wrap;
 }
 
-.portfolio-img:not(:last-child) {
-  margin-right: 23px;
-}
-
 .portfolio-img {
   margin-bottom: 48px;
+  margin-right: 24px;
 }
 
 .postcard-prtf {
